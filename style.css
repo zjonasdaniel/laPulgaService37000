@@ -107,7 +107,7 @@
 
 }
 .Section2Div{
-    background-image: url("imagenes/mucha-lucha.jpg");
+    background-image: url("imagenes/seccion2fondo.jpg");
     height: 300px;
     background-position: center;
     background-repeat: no-repeat;
@@ -210,8 +210,11 @@
     height: 50px;
     width: 50px;
 }
-.Secton3Div{
-    background-color: brown;
+.Section3Div{
+    background-image: url("imagenes/seccion3fondo.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     height: 300px;
     display: flex;
     justify-content: center; 
@@ -357,7 +360,7 @@
         margin: 5px 0px 10px 0px;
     }
     .Section2Div{
-        height: 350px;
+        height: 400px;
     }
     .Section2Img{
         height: 80%;
