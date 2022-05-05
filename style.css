@@ -75,9 +75,12 @@
     width: 90%;
     display: flex;
     justify-content: space-between;
-    font-size: 150%;
+    font-size: 50px;
     align-items: center;
     color: aliceblue;
+}
+.Section1 h1{
+    font-size: 60px;
 }
 .SectionVideo{
     width: 100vw;
@@ -102,13 +105,14 @@
     text-decoration: none;
     color: white;
     font-size: 30px;
-    padding: 5px;
+    padding: 5px 15px 5px 15px;
     border-radius: 15px;
+    border: solid 2px black;
 
 }
 .Section2Div{
     background-image: url("imagenes/seccion2fondo.jpg");
-    height: 300px;
+    height: 600px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -122,31 +126,36 @@
     flex-direction: column;
     align-items: center;
     color: aliceblue;
-    
+}
+.Section2 h2{
+    margin-top: 50px;
 }
 .Section2Img{
     height: 80%;
-    width: 100%;
-    margin-top: 30px;
+    width: 80%;
+    margin-top: 100px;
     display: grid;
-    grid-template-rows: auto;
+    grid-template-rows: 350px;
     grid-template-columns: repeat(4,1fr);
-    gap: 30px;
+    gap: 10px;
     grid-template-areas: "item1 item2 item3 item4";        
 }
 .item1{
     grid-area: item1;
     height: 80%;
     width: 80%;
-    background: linear-gradient(rgba(0, 0, 0, 0.700),rgba(0, 0, 0, 0.700));
+    background: linear-gradient(rgba(26, 114, 84, 0.7),rgba(26, 114, 84, 0.7));
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     position: relative;
+    border-radius: 30px;
 }
 .item1 p{
     margin:20% 10% 0px 10%;
+    text-align: center;
+    font-size: 25px;
 }
 .item1 img{
     position: absolute;
@@ -156,15 +165,18 @@
     grid-area: item2;
     height: 80%;
     width: 80%;
-    background: linear-gradient(rgba(0, 0, 0, 0.700),rgba(0, 0, 0, 0.700));
+    background: linear-gradient(rgba(26, 114, 84, 0.7),rgba(26, 114, 84, 0.7));
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     position: relative;
+    border-radius: 30px;
 }
 .item2 p{
     margin:20% 10% 0px 10%;
+    text-align: center;
+    font-size: 25px;
 }
 .item2 img{
     position: absolute;
@@ -174,15 +186,18 @@
     grid-area: item3;
     height: 80%;
     width: 80%;
-    background: linear-gradient(rgba(0, 0, 0, 0.700),rgba(0, 0, 0, 0.700));
+    background: linear-gradient(rgba(26, 114, 84, 0.7),rgba(26, 114, 84, 0.7));
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     position: relative;
+    border-radius: 30px;
 }
 .item3 p{
     margin:20% 10% 0px 10%;
+    text-align: center;
+    font-size: 25px;
 }
 .item3 img{
     position: absolute;
@@ -192,15 +207,18 @@
     grid-area: item4;
     height: 80%;
     width: 80%;
-    background: linear-gradient(rgba(0, 0, 0, 0.700),rgba(0, 0, 0, 0.700));
+    background: linear-gradient(rgba(26, 114, 84, 0.7),rgba(26, 114, 84, 0.7));
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     position: relative;
+    border-radius: 30px;
 }
 .item4 p{
     margin:20% 10% 0px 10%;
+    text-align: center;
+    font-size: 25px;
 }
 .item4 img{
     position: absolute;
@@ -215,7 +233,7 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 300px;
+    height: 500px;
     display: flex;
     justify-content: center; 
     border-bottom: solid 1px white;
@@ -228,22 +246,29 @@
     color: aliceblue;
 }
 .Section3 div{
-    height: 250px;
+    height: 350px;
     width: 30%;
     margin: 0px 20px 0px 20px;
     background: linear-gradient(rgba(0, 0, 0, 0.700),rgba(0, 0, 0, 0.700));
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 2rem;
+    font-size: 25px;
+}
+.cardstyle{
+    color: white;
+    text-decoration: none;
 }
 .footer{
-    background-color: black;
-    color: aliceblue;
-    height: 300px;
+    background-image: url("imagenes/fondofooter.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    height: 400px;
+    width: 100%;
     display: flex;
     justify-content: center;
-
 }
 .footerDiv{
     width: 90%;
@@ -251,12 +276,13 @@
     justify-content: center;
     color: aliceblue;
     flex-direction: column;
-    
+    justify-content: space-evenly;
 }
 .footerTitle{
     display: flex;
     justify-content: center;
     margin-bottom: 20px;
+    color: white;
 }
 .footerBottom{
     display: flex;
@@ -265,18 +291,38 @@
 .footerRedes{
     display: flex;
     justify-content: center;
-    align-items: center;
+    flex-direction: column;
+    align-items: flex-start;
     justify-content: space-evenly;
     width: 100%;
-
+    color: white;
+    font-size: 20px;
+}
+.footerRedes div{
+    padding-left: 50px;
 }
 .footerRedes img{
-    height: 80px;
-    width: 80px;
+    height: 40px;
+    width: 40px;
 }
 .footerMap{
     width: 100%;
     height: 210px;
+    border: solid 2px rgb(214,118,183);
+}
+.footerfirma{
+    border-top: solid 2px white;
+    height: 50px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+}
+.footerfirma1{
+    width: 80%;
+    display: flex;
+    justify-content: flex-start;
+    color: white;
+    margin-top: 10px;
 }
 .nosotros{
     background-color: darkgrey;
@@ -360,7 +406,7 @@
         margin: 5px 0px 10px 0px;
     }
     .Section2Div{
-        height: 400px;
+        height: 600px;
     }
     .Section2Img{
         height: 80%;
@@ -447,9 +493,9 @@
         height: 40px;
         width: 40px;
     }
-    .Secton3Div{
+    .Section3Div{
         background-color: brown;
-        height: 300px;
+        height: 1500px;
         display: flex;
         justify-content: center; 
         border-bottom: solid 1px white;
@@ -482,6 +528,6 @@
         margin-bottom: 30px;
     }
     .footer{
-        height: 450px;
+        height: 600px;
     }
 }
