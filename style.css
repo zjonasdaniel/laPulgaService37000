@@ -112,7 +112,7 @@
 }
 .Section2Div{
     background-image: url("imagenes/seccion2fondo.jpg");
-    height: 600px;
+    height: 800px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -142,15 +142,15 @@
 }
 .item1{
     grid-area: item1;
-    height: 80%;
+    height: 400px;
     width: 80%;
     background: linear-gradient(rgba(26, 114, 84, 0.7),rgba(26, 114, 84, 0.7));
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: relative;
+    justify-content: space-evenly;
+    align-items:center;
     border-radius: 30px;
+    position: relative;
 }
 .item1 p{
     margin:20% 10% 0px 10%;
@@ -158,20 +158,20 @@
     font-size: 25px;
 }
 .item1 img{
-    position: absolute;
-    top: 10%;
+    position:absolute;
+    top: 20px;
 }
 .item2{
     grid-area: item2;
-    height: 80%;
+    height: 400px;
     width: 80%;
     background: linear-gradient(rgba(26, 114, 84, 0.7),rgba(26, 114, 84, 0.7));
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
-    position: relative;
     border-radius: 30px;
+    position: relative;
 }
 .item2 p{
     margin:20% 10% 0px 10%;
@@ -179,20 +179,20 @@
     font-size: 25px;
 }
 .item2 img{
-    position: absolute;
-    top: 10%;
+    position:absolute;
+    top: 20px;
 }
 .item3{
     grid-area: item3;
-    height: 80%;
+    height: 400px;
     width: 80%;
     background: linear-gradient(rgba(26, 114, 84, 0.7),rgba(26, 114, 84, 0.7));
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
-    position: relative;
     border-radius: 30px;
+    position: relative;
 }
 .item3 p{
     margin:20% 10% 0px 10%;
@@ -200,20 +200,20 @@
     font-size: 25px;
 }
 .item3 img{
-    position: absolute;
-    top: 10%;
+    position:absolute;
+    top: 20px;
 }
 .item4{
     grid-area: item4;
-    height: 80%;
+    height: 400px;
     width: 80%;
     background: linear-gradient(rgba(26, 114, 84, 0.7),rgba(26, 114, 84, 0.7));
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
-    position: relative;
     border-radius: 30px;
+    position: relative;
 }
 .item4 p{
     margin:20% 10% 0px 10%;
@@ -221,22 +221,20 @@
     font-size: 25px;
 }
 .item4 img{
-    position: absolute;
-    top: 10%;
+    position:absolute;
+    top: 20px;
 }
 .Section2Img div img {
     height: 50px;
     width: 50px;
 }
 .Section3Div{
-    background-image: url("imagenes/seccion3fondo.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-color: darkgrey;
     height: 500px;
     display: flex;
     justify-content: center; 
     border-bottom: solid 1px white;
+    border-top: solid 2px white;
 }
 .Section3{
     width: 90%;
@@ -269,6 +267,7 @@
     width: 100%;
     display: flex;
     justify-content: center;
+    border-top: solid white 2px;
 }
 .footerDiv{
     width: 90%;
@@ -406,7 +405,7 @@
         margin: 5px 0px 10px 0px;
     }
     .Section2Div{
-        height: 600px;
+        height: 500px;
     }
     .Section2Img{
         height: 80%;
@@ -423,6 +422,7 @@
     }
     .item1{
         grid-area: item1;
+        height: 100%;
         width: 100%;
         background: linear-gradient(rgba(0, 0, 0, 0.700),rgba(0, 0, 0, 0.700));
         display: flex;
@@ -440,6 +440,7 @@
     }
     .item2{
         grid-area: item2;
+        height: 100%;
         width: 100%;
         background: linear-gradient(rgba(0, 0, 0, 0.700),rgba(0, 0, 0, 0.700));
         display: flex;
@@ -457,6 +458,7 @@
     }
     .item3{
         grid-area: item3;
+        height: 100%;
         width: 100%;
         background: linear-gradient(rgba(0, 0, 0, 0.700),rgba(0, 0, 0, 0.700));
         display: flex;
@@ -474,6 +476,7 @@
     }
     .item4{
         grid-area: item4;
+        height: 100%;
         width: 100%;
         background: linear-gradient(rgba(0, 0, 0, 0.700),rgba(0, 0, 0, 0.700));
         display: flex;
@@ -494,7 +497,7 @@
         width: 40px;
     }
     .Section3Div{
-        background-color: brown;
+        background-color: darkgrey;
         height: 1500px;
         display: flex;
         justify-content: center; 
@@ -531,3 +534,39 @@
         height: 600px;
     }
 }
+@media only screen and (max-width:812px){
+    
+    .item1 p{
+        font-size:18px
+    }
+    .item2 p{
+        font-size:18px
+    }
+    .item3 p{
+        font-size:18px
+    }
+    .item4 p{
+        font-size:18px
+    }
+}
+@media only screen and (max-width:500px){
+    .Section1 h1{
+        font-size:30px ;
+    }
+    .Section1-1{
+        font-size: 15px;
+    }
+    .footerfirma1{
+        font-size: 12px;
+    }
+    .footerRedes div{
+        padding-left: 0px;
+    }
+    .nosotrosDiv{
+        font-size: 10px;
+    }
+    .serviciosDivDiv{
+        font-size: 10px;
+    }
+}
+    
