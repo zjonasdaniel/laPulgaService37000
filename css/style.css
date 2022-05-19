@@ -584,7 +584,7 @@
 }
 
 .nosotros {
-  background-color: darkgrey;
+  background-color: rgb(145, 139, 127);
   height: 500px;
   color: black;
   display: flex;
@@ -594,13 +594,13 @@
 .nosotrosdiv {
   width: 90%;
   text-align: center;
-  display: flex;
   flex-direction: column;
+  display: flex;
   justify-content: center;
 }
 
 .servicios {
-  background-color: darkgrey;
+  background-color: rgb(145, 139, 127);
   height: 500px;
   color: black;
   display: flex;
@@ -621,7 +621,7 @@
 }
 
 .recomendaciones {
-  background-color: darkgrey;
+  background-color: rgb(145, 139, 127);
   height: 500px;
   color: black;
   display: flex;
@@ -637,7 +637,7 @@
 }
 
 .contacto {
-  background-color: darkgrey;
+  background-color: rgb(145, 139, 127);
   height: 500px;
   color: black;
   display: flex;

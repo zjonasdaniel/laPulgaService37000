@@ -1,0 +1,5 @@
+*Se coloco un titulo(head) descriptivo entre 35 y 65 caracteres
+*Unico h1 por html respetando jerarquia decendente 
+*Se completo el Alt en imagenes descriptivas
+*Se agrego un meta description y palabras claves
+*se agrego todos los property"og:..." para personalizar la vista en links
