@@ -75,133 +75,13 @@
 .section1-1:hover{
     color: black;
 }
-
-/*.section2div{
-    background-image: url("../imagenes/seccion2fondo.jpg");
-    height: 800px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    justify-content: center; 
-    border-bottom: solid 1px white;
-}
-.section2{
-    width: 90%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: aliceblue;
-}
-.section2 h2{
-    margin-top: 50px;
-}
-.section2img{
-    height: 80%;
-    width: 80%;
-    margin-top: 100px;
-    display: grid;
-    grid-template-rows: 350px;
-    grid-template-columns: repeat(4,1fr);
-    gap: 10px;
-    grid-template-areas: "item1 item2 item3 item4";        
-}
-.item1{
-    grid-area: item1;
-    height: 400px;
-    width: 80%;
-    background: linear-gradient(rgba(26, 114, 84, 0.7),rgba(26, 114, 84, 0.7));
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items:center;
-    border-radius: 30px;
-    position: relative;
-}
-.item1 p{
-    margin:20% 10% 0px 10%;
-    text-align: center;
-    font-size: 25px;
-}
-.item1 img{
-    position:absolute;
-    top: 20px;
-}
-.item2{
-    grid-area: item2;
-    height: 400px;
-    width: 80%;
-    background: linear-gradient(rgba(26, 114, 84, 0.7),rgba(26, 114, 84, 0.7));
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    border-radius: 30px;
-    position: relative;
-}
-.item2 p{
-    margin:20% 10% 0px 10%;
-    text-align: center;
-    font-size: 25px;
-}
-.item2 img{
-    position:absolute;
-    top: 20px;
-}
-.item3{
-    grid-area: item3;
-    height: 400px;
-    width: 80%;
-    background: linear-gradient(rgba(26, 114, 84, 0.7),rgba(26, 114, 84, 0.7));
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    border-radius: 30px;
-    position: relative;
-}
-.item3 p{
-    margin:20% 10% 0px 10%;
-    text-align: center;
-    font-size: 25px;
-}
-.item3 img{
-    position:absolute;
-    top: 20px;
-}
-.item4{
-    grid-area: item4;
-    height: 400px;
-    width: 80%;
-    background: linear-gradient(rgba(26, 114, 84, 0.7),rgba(26, 114, 84, 0.7));
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    border-radius: 30px;
-    position: relative;
-}
-.item4 p{
-    margin:20% 10% 0px 10%;
-    text-align: center;
-    font-size: 25px;
-}
-.item4 img{
-    position:absolute;
-    top: 20px;
-}
-.section2img div img {
-    height: 50px;
-    width: 50px;
-}
-*/
 .section3div{
-    background-color: darkgrey;
     height: 500px;
     display: flex;
     justify-content: center; 
     border-bottom: solid 1px white;
     border-top: solid 2px white;
+    background-color: grey;
 }
 .section3{
     width: 90%;
@@ -219,6 +99,9 @@
     align-items: center;
     justify-content: center;
     font-size: 25px;
+}
+.section3 div div{
+    background: none;
 }
 .cardstyle{
     color: white;
@@ -295,30 +178,115 @@
     height: 500px;
     color: black;
     @include flex (flex,center);
+    flex-direction: column;
+    align-items: center
 }
-.nosotrosdiv{
-    width: 90%;
+.nosotros h2{
+    @include flex (flex,center);
+}
+.nosotrosdivpadre{
+    width: 70%;
+    height: 450px;
+    @include flex (flex,center);
+}
+.nosotrostexto{
+    width: 50%;
     text-align: center;
     flex-direction: column;
     @include flex (flex,center);
+    font-size: 23px;
+    text-align: start;
+}
+.nosotrosimagen{
+    width: 50%;
+    @include flex (flex,center);
+    align-items: center;
+}
+.nosotrosimagen2{
+    height: 80%;
+    width: 80%;
+    background-image: url("../imagenes/EntradaLocal.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 .servicios{
     background-color: map-get($colores,color2);
-    height: 500px;
+    height: 1500px;
     color: black;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 .serviciosdiv{
     width: 90%;
-    text-align: center;
+    height: 90%;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
-.serviciosdivdiv{
+.servicioscontenedoritem{
+    width: 80%;
+    height: 90%;
+    background-color: black;
+    border-radius: 20px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0px 20px 0px;
+}
+.servicioscontenedorimagen{
+    height: 100%;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.servicioscomputadoras{
+    height: 80%;
+    width: 80%;
+    background-image: url(../imagenes/servicioscomputadoras.png);
+    background-position: center;
+    background-size: cover;
+}
+.serviciosimpresoras{
+    height: 75%;
+    width: 75%;
+    background-image: url(../imagenes/serviciosimpresoras.png);
+    background-position: center;
+    background-size: cover;
+}
+.serviciostablets{
+    height: 80%;
+    width: 50%;
+    background-image: url(../imagenes/serviciostablets.png);
+    background-position: center;
+    background-size: cover;
+}
+.servicioscontenedortexto1,.servicioscontenedortexto2,.servicioscontenedortexto3{
+    height: 100%;
+    width: 60%;
+    color: white;
+    padding-left: 60px;
+    font-size: 25px;
+    display:flex;
+    align-items: center;
+
+}
+.servicioscontenedortexto1,.servicioscontenedortexto3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80%;
+    border-left: solid 2px white;
+}
+.servicioscontenedortexto2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80%;
+    border-right: solid 2px white;
 }
 .recomendaciones{
     background-color: map-get($colores,color2);
@@ -348,7 +316,17 @@
     flex-direction: column;
     justify-content: center;
 }
+@media only screen and (max-width:1361px){
+    .servicioscomputadoras,.serviciosimpresoras{
+            height: 70%;
+            width: 80%;
+    }
+
+}
 @media only screen and (max-width:1000px){
+    .nosotrostexto p{
+        font-size: 17px;
+    }
     .headerredes{
         flex-direction: column;
     }
@@ -498,9 +476,72 @@
     .footer{
         height: 600px;
     }
+    .servicios{
+        background-color: map-get($colores,color2);
+        height: 3000px;
+        color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .serviciosdiv{
+        width: 95%;
+        height: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .servicioscontenedoritem{
+        width: 90%;
+        height: 90%;
+        background-color: black;
+        border-radius: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 20px 0px 20px 0px;
+        flex-direction: column;
+    }
+    .servicioscontenedorimagen{
+        height: 80%;
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .servicioscontenedortexto1,.servicioscontenedortexto2,.servicioscontenedortexto3{
+        height: 40%;
+        width: 90%;
+        color: white;
+        padding-left: 60px;
+        font-size: 23px;
+        display:flex;
+        align-items: center;
+        
+    }
+    .servicioscontenedortexto1,.servicioscontenedortexto3{
+        border-left: none;
+    }
+    .servicioscontenedortexto2{
+        border-right: none;
+    }
+    .servicioscontenedortexto2{
+        order: 1;
+    }
+}
+@media only screen and (max-width:1427px){
+    .nosotrostexto{
+        font-size: 20px;
+    }
+    .nosotrosdivpadre{
+        width: 90%
+    }
 }
 @media only screen and (max-width:812px){
-    
+    .nosotrostexto p{
+        font-size: 14px;
+    }
     .item1 p{
         font-size:18px
     }
@@ -527,17 +568,73 @@
     .footerredes div{
         padding-left: 0px;
     }
-    .nosotrosdiv{
-        font-size: 20px;
-    }
     .nosotros{
         height: 1000px;
     }
-    .serviciosdivdiv{
-        font-size: 20px;
+    .nosotrosdivpadre{
+        flex-direction: column;
+        align-items: center;
+        height: 900px;
+        width: 90%;
+    }
+    .nosotrostexto{
+        width: 100%;
+        text-align: center;
+        flex-direction: column;
+        font-size: 23px;
+    }
+    .nosotrosimagen{
+        width: 350px;
+        height: 500px;
+        @include flex (flex,center);
+        align-items: center;
+    }
+    .nosotrosimagen2{
+        height: 80%;
+        width: 80%;
+        background-image: url("../imagenes/EntradaLocal.jpeg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        display: flex;
     }
     .servicios{
-        height: 1000px;
+        background-color: map-get($colores,color2);
+        height: 3500px;
+        color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .servicioscontenedoritem{
+        width: 100%;
+    }
+    .servicioscontenedorimagen{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .servicioscomputadoras{
+        height: 55%;
+        width: 95%;
+    }
+    .serviciosimpresoras{
+        height: 55%;
+        width: 95%;
+    }
+    .serviciostablets{
+        height: 80%;
+        width: 95%;
+    }
+    .servicioscontenedortexto1,.servicioscontenedortexto2,.servicioscontenedortexto3{
+        width: 100%;
+        font-size: 22px;
+        display:flex;
+        align-items: center;
+        padding-left: 10px;
+    
     }
 }
     

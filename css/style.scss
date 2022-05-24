@@ -43,7 +43,7 @@
 }
 .section2div .section2 .section2img .item1 img {
   position: absolute;
-  top: 40px;
+  top: 20px;
   height: 50px;
   width: 50px;
 }
@@ -97,7 +97,7 @@
 }
 .section2div .section2 .section2img .item2 img {
   position: absolute;
-  top: 40px;
+  top: 20px;
   height: 50px;
   width: 50px;
 }
@@ -151,7 +151,7 @@
 }
 .section2div .section2 .section2img .item3 img {
   position: absolute;
-  top: 40px;
+  top: 20px;
   height: 50px;
   width: 50px;
 }
@@ -205,7 +205,7 @@
 }
 .section2div .section2 .section2img .item4 img {
   position: absolute;
-  top: 40px;
+  top: 20px;
   height: 50px;
   width: 50px;
 }
@@ -351,12 +351,12 @@
 }
 
 .section3div {
+  background-color: darkgrey;
   height: 500px;
   display: flex;
   justify-content: center;
   border-bottom: solid 1px white;
   border-top: solid 2px white;
-  background-color: grey;
 }
 
 .section3 {
@@ -376,10 +376,6 @@
   align-items: center;
   justify-content: center;
   font-size: 25px;
-}
-
-.section3 div div {
-  background: none;
 }
 
 .cardstyle {
@@ -507,100 +503,29 @@
   align-items: center;
 }
 
-.nosotrosimagen2 {
+.nosotrosimagen img {
   height: 80%;
-  width: 80%;
-  background-image: url("../imagenes/EntradaLocal.jpeg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
 }
 
 .servicios {
   background-color: rgb(145, 139, 127);
-  height: 1500px;
+  height: 500px;
   color: black;
   display: flex;
   justify-content: center;
-  align-items: center;
 }
 
 .serviciosdiv {
   width: 90%;
-  height: 90%;
+  text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
 }
 
-.servicioscontenedoritem {
-  width: 80%;
-  height: 90%;
-  background-color: black;
-  border-radius: 20px;
+.serviciosdivdiv {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 20px 0px 20px 0px;
-}
-
-.servicioscontenedorimagen {
-  height: 100%;
-  width: 40%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.servicioscomputadoras {
-  height: 80%;
-  width: 80%;
-  background-image: url(../imagenes/servicioscomputadoras.png);
-  background-position: center;
-  background-size: cover;
-}
-
-.serviciosimpresoras {
-  height: 75%;
-  width: 75%;
-  background-image: url(../imagenes/serviciosimpresoras.png);
-  background-position: center;
-  background-size: cover;
-}
-
-.serviciostablets {
-  height: 80%;
-  width: 50%;
-  background-image: url(../imagenes/serviciostablets.png);
-  background-position: center;
-  background-size: cover;
-}
-
-.servicioscontenedortexto1, .servicioscontenedortexto2, .servicioscontenedortexto3 {
-  height: 100%;
-  width: 60%;
-  color: white;
-  padding-left: 60px;
-  font-size: 25px;
-  display: flex;
-  align-items: center;
-}
-
-.servicioscontenedortexto1, .servicioscontenedortexto3 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 80%;
-  border-left: solid 2px white;
-}
-
-.servicioscontenedortexto2 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 80%;
-  border-right: solid 2px white;
+  justify-content: space-between;
 }
 
 .recomendaciones {
@@ -635,17 +560,7 @@
   justify-content: center;
 }
 
-@media only screen and (max-width: 1361px) {
-  .servicioscomputadoras, .serviciosimpresoras {
-    height: 70%;
-    width: 80%;
-  }
-}
 @media only screen and (max-width: 1000px) {
-  .nosotrostexto p {
-    font-size: 17px;
-  }
-
   .headerredes {
     flex-direction: column;
   }
@@ -817,81 +732,13 @@
   .footer {
     height: 600px;
   }
-
-  .servicios {
-    background-color: rgb(145, 139, 127);
-    height: 3000px;
-    color: black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .serviciosdiv {
-    width: 95%;
-    height: 90%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .servicioscontenedoritem {
-    width: 90%;
-    height: 90%;
-    background-color: black;
-    border-radius: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 20px 0px 20px 0px;
-    flex-direction: column;
-  }
-
-  .servicioscontenedorimagen {
-    height: 80%;
-    width: 80%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .servicioscontenedortexto1, .servicioscontenedortexto2, .servicioscontenedortexto3 {
-    height: 40%;
-    width: 90%;
-    color: white;
-    padding-left: 60px;
-    font-size: 23px;
-    display: flex;
-    align-items: center;
-  }
-
-  .servicioscontenedortexto1, .servicioscontenedortexto3 {
-    border-left: none;
-  }
-
-  .servicioscontenedortexto2 {
-    border-right: none;
-  }
-
-  .servicioscontenedortexto2 {
-    order: 1;
-  }
 }
 @media only screen and (max-width: 1427px) {
   .nosotrostexto {
     font-size: 20px;
   }
-
-  .nosotrosdivpadre {
-    width: 90%;
-  }
 }
 @media only screen and (max-width: 812px) {
-  .nosotrostexto p {
-    font-size: 14px;
-  }
-
   .item1 p {
     font-size: 18px;
   }
@@ -925,85 +772,21 @@
     padding-left: 0px;
   }
 
+  .nosotrosdiv {
+    font-size: 20px;
+  }
+
   .nosotros {
     height: 1000px;
   }
 
-  .nosotrosdivpadre {
-    flex-direction: column;
-    align-items: center;
-    height: 900px;
-    width: 90%;
-  }
-
-  .nosotrostexto {
-    width: 100%;
-    text-align: center;
-    flex-direction: column;
-    font-size: 23px;
-  }
-
-  .nosotrosimagen {
-    width: 350px;
-    height: 500px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .nosotrosimagen2 {
-    height: 80%;
-    width: 80%;
-    background-image: url("../imagenes/EntradaLocal.jpeg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    display: flex;
+  .serviciosdivdiv {
+    font-size: 20px;
   }
 
   .servicios {
-    background-color: rgb(145, 139, 127);
-    height: 3500px;
-    color: black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .servicioscontenedoritem {
-    width: 100%;
-  }
-
-  .servicioscontenedorimagen {
-    height: 100%;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .servicioscomputadoras {
-    height: 55%;
-    width: 95%;
-  }
-
-  .serviciosimpresoras {
-    height: 55%;
-    width: 95%;
-  }
-
-  .serviciostablets {
-    height: 80%;
-    width: 95%;
-  }
-
-  .servicioscontenedortexto1, .servicioscontenedortexto2, .servicioscontenedortexto3 {
-    width: 100%;
-    font-size: 22px;
-    display: flex;
-    align-items: center;
-    padding-left: 10px;
+    height: 1000px;
   }
 }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.scss.map */
